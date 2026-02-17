@@ -1,14 +1,24 @@
 import React from 'react';
 import { FiSearch } from 'react-icons/fi';
+import Typical from 'react-typical';
 
 const Banner = () => {
     return (
         <div className="h-screen text-black flex items-center justify-center">
             <div className="text-center px-4">
                 <h1 className="text-5xl md:text-6xl font font-bold">
-                    Your Marketplace for Freelance<br/> <span className='text-[#fa4c4c]'>Opportunities</span> 
+                    Your Marketplace for Freelance<br/> <span className='text-[#fa4c4c]'>Opportunities </span> 
+               
+                    <Typical
+                        steps={['Find the Perfect Job', 2000, 'Hire the Best Talent', 2000]}
+                        loop={Infinity}
+                        wrapper="span"
+                    />
+               
                 </h1>
-                <p className="mt-4 text-md md:text-md font-poppins">
+
+               
+                <p className="mt-4 text-md md:text-md font-poppins text-gray-400">
 Explore             thousands of jobs across Web Development, Digital Marketing, and Graphic Design.<br/> Post your projects or bid on jobs today – all in one place!                </p>
                <div className="flex justify-center mt-8">
                 <div className="flex w-full max-w-2xl">

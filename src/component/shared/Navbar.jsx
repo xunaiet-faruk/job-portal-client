@@ -40,7 +40,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link className="border text-white px-6 py-1 rounded-2xl font-semibold bg-[#fa4c4c]" to={""}>
+                    <Link className="border text-white px-6 py-1 rounded-2xl font-semibold bg-[#fa4c4c]" to={"/login"}>
                     Login
                     </Link>
                 </div>
