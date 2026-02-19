@@ -7,7 +7,7 @@ const Register = () => {
         <div>
             <div className="min-h-screen flex items-center justify-center   px-4 mb-12">
                 <div className="bg-white shadow-2xl rounded-3xl p-10 w-full max-w-lg">
-                    <h2 className="text-3xl font-bold text-gray-800 text-center mb-6">
+                    <h2 className="text-3xl font-bold text-[#fa4c4c] text-center mb-6">
                         Create an Account
                     </h2>
 
@@ -52,7 +52,7 @@ const Register = () => {
                     </div>
 
                     {/* Register Button */}
-                    <button className="w-full bg-[#fa4c4c] text-white font-bold py-3 rounded-xl hover:bg-red-600 transition duration-300 mb-4">
+                    <button className="w-full bg-gradient-to-r from-purple-600 to-pink-500 hover:scale-105 transform transition duration-300 shadow-lg text-white font-bold py-3 rounded-xl hover:bg-red-600 transition duration-300 mb-4">
                         Register
                     </button>
 
@@ -71,7 +71,7 @@ const Register = () => {
                     {/* Footer */}
                     <p className="text-center text-gray-500 mt-6">
                         Already have an account?{" "}
-                        <Link to={'/login'} className="text-[#71b6af] font-semibold cursor-pointer">
+                        <Link to={"/login"} className="text-[#71b6af] font-semibold cursor-pointer">
                             Login
                         </Link>
                     </p>

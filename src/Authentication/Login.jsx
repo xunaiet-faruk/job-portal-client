@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { use } from 'react';
 import { FcGoogle } from 'react-icons/fc';
 import { Link } from 'react-router-dom';
+import { Authcontext } from '../context/Authcontext';
 
 const Login = () => {
+    const user =use(Authcontext)
+    console.log(user);
     return (
         <div>
             <div className="min-h-screen flex items-center justify-center ">
                 <div className="bg-white border-t border-b hover:shadow-2xl hover:shadow-[#de7373] border-[#de7373] shadow-2xl rounded-3xl p-10 w-full max-w-md">
-                    <h2 className="text-3xl font-bold text-gray-800 text-center mb-6">
-                        Welcome Back
-                    </h2>
+                    <div className='flex gap-5 justify-center items-center'>
+                        <h2 className="text-3xl font-bold text-[#fa4c4c] text-center mb-6">
+                            Welcome Back
+                        </h2>
+                        <img className="w-[70px] -mt-6" src="/Logo.png" alt="logo" />
+                    </div>
 
                     {/* Email Input */}
                     <div className="mb-4">
@@ -32,7 +38,7 @@ const Login = () => {
                     </div>
 
                     {/* Login Button */}
-                    <button className="w-full bg-[#fa4c4c] text-white font-bold py-3 rounded-xl hover:bg-red-600 transition duration-300">
+                    <button className="w-full  bg-gradient-to-r from-purple-600 to-pink-500 hover:scale-105 transform transition duration-300 shadow-lg text-white font-bold py-3 rounded-xl hover:bg-red-600 transition duration-300">
                         Login
                     </button>
 
